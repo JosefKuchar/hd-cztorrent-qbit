@@ -1,4 +1,6 @@
-# hd-cztorrent-qbit
-HD CZTorrent qBittorrent plugin
+# HD CZTORRENT qBittorrent plugin
 
-Create hd_cztorrent.txt config file based on example inside this repository in `src/engines/hd_cztorrent_example.txt` inside `%localappdata%\qBittorrent\nova3\engines\`
+- Install python
+- Run `install_deps.bat`
+- Install `src/engines/hd_cztorrent.py` with plugin installer inside qBittorrent
+- Set your credentials in `hd_cztorrent.txt` inside `%localappdata%\qBittorrent\nova3\engines\`
