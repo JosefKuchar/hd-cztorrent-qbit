@@ -1,5 +1,4 @@
-# hd-cztorrent-qbit
-HD CZTorrent qBittorrent plugin
+# HD CZTORRENT qBittorrent plugin
 
 - Install python
 - Run `install_deps.bat`
