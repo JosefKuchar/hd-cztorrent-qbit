@@ -127,3 +127,6 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Login file
+src/engines/hd_cztorrent.txt

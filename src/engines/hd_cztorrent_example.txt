@@ -1,0 +1,3 @@
+[LOGIN]
+username = YourUsername
+password = YourPassword
