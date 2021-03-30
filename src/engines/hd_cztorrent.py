@@ -1,4 +1,4 @@
-# VERSION: 1.00
+# VERSION: 1.1
 # AUTHORS: Josef Kuchař (josef@josefkuchar.com)
 
 from helpers import download_file, retrieve_url
@@ -22,7 +22,15 @@ class hd_cztorrent(object):
     def __init__(self):
         # Load config
         config = configparser.ConfigParser()
-        config.read(os.path.dirname(os.path.abspath(__file__)) + '/hd_cztorrent.txt')
+        path = os.path.dirname(os.path.abspath(__file__)) + '/hd_cztorrent.txt'
+
+        if os.path.isfile(path):
+            config.read(path)
+        else:
+            file = open(path, 'w')
+            file.write('[LOGIN]\nusername = YourUsername\npassword = YourPassword')
+            file.close()
+            exit()
 
         login = {
             'uid': config['LOGIN']['username'],
