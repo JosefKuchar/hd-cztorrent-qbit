@@ -1,4 +1,4 @@
-# VERSION: 1.1
+# VERSION: 1.2
 # AUTHORS: Josef Kuchař (josef@josefkuchar.com)
 
 from helpers import download_file, retrieve_url
@@ -81,7 +81,6 @@ class hd_cztorrent(object):
             info = t.findAll('td', {'class': 'lista'})
 
             details_name = info[1].find('a')
-            print(details_name.getText())
             details['name'] = details_name.getText()
             details['desc_link'] = 'https://www.hd-cztorrent.cz/' + details_name['href']
             details['link'] = 'https://www.hd-cztorrent.cz/' + info[3].find('a')['href']
